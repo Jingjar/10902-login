@@ -1,3 +1,7 @@
+<?php 
+include_once "base.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    歡迎光臨
+    <?=$_SESSION['user'];?>歡迎光臨
 </body>
 </html>
