@@ -2,7 +2,7 @@
 include_once "../base.php";
 
 $acc=$_POST['acc'];
-$pw=$_POST['pw'];
+$pw=md5($_POST['pw']);
 $email=$_POST['email'];
 
 $data=[
