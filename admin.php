@@ -39,7 +39,11 @@ foreach($users as $user){
         echo "<td>{$user['email']}</td>";
         echo "<td>{$user['addr']}</td>";
         echo "<td>{$user['create_time']}</td>";
-        echo "<td><a href='edit_user.php?id={$user['id']}'><button class='btn btn-success'>編輯</button></a></td>";
+        echo "<td>";
+        echo "<a href='edit_user.php?id={$user['id']}'><button class='btn btn-sm btn-success'>編輯</button></a>";
+        echo "<a href='del_user.php?id={$user['id']}'><button class='btn btn-sm btn-danger'>刪除</button></a>";
+        
+        echo "</td>";
     echo "</tr>";
 }
 
