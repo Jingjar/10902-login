@@ -1,6 +1,10 @@
 <?php
+session_start();
+$_SESSION['login']=null;
 
-setcookie("login",'',-100);
+unset($_SESSION['login']);
+
+
 header("location:index.php");
 
 ?>

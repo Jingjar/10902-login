@@ -11,9 +11,9 @@ include_once('header.php');
 <div class="col-8 mx-auto d-flex justify-content-between">
 <span>
 <?php
-
-if(isset($_COOKIE['login'])){
-    echo $_COOKIE['login']."歡迎";
+session_start();
+if(isset($_SESSION['login'])){
+    echo $_SESSION['login']."歡迎";
 }
 
 ?>
